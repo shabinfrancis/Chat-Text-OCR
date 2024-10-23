@@ -14,7 +14,8 @@ const Navbar = () => {
     const navItems = [
         { label: "Home", href: "/", element: <Home /> },
         // { label: "Features", href: "/features", element: <Features /> },
-        { label: "Workflow", href: "/workflow", element: <Working /> },
+        // { label: "Workflow", href: "/workflow", element: <Working /> },
+        { label: "Get Started", href: "/upload", element: <Uploder/>}
         // { label: "Pricing", href: "/pricing", element: <Pricing /> },
         // { label: "Testimonials", href: "/testimonials", element: <Testimonials /> },
     ];
@@ -25,10 +26,10 @@ const Navbar = () => {
     }
     return (
         <>
-            <nav className="sticky top-0 z-50 py-4 backdrop-blur-lg border-b border-neutral-50">
+            <nav className="sticky h-20 top-0 z-50 py-4 backdrop-blur-lg border-b border-neutral-50">
                 <div className="container mx-auto px-4 relative text-md">
                     {/* <div className='flex justify-center text-xl'>Online OCR</div> */}
-                    <div className="flex justify-between items-center">
+                    <div className="flex justify-around items-center">
                         <ul className='hidden lg:flex ml-14 space-x-12'>
                             {navItems.map((item, index) => (
                                 <li key={index}>
@@ -71,9 +72,9 @@ const Navbar = () => {
                     )}
                 </div>
             </nav>
-            {/* <div className="flex justify-center items-center flex-shrink-0">
+            <div className="flex justify-center items-center flex-shrink-0">
                 <img src={logo} alt="logo" />
-            </div> */}
+            </div>
             
         </>
 

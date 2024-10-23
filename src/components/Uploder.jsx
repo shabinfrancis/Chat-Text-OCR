@@ -83,6 +83,7 @@ const Uploder = ({ reference }) => {
             </form> */}
             <div className="container">
                 <form
+                onSubmit={handleFormSubmit}
                     className='upload'
                     onClick={() => document.querySelector(".input-field").click()}
                 >

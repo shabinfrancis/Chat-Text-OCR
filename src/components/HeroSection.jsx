@@ -1,7 +1,10 @@
 import React from 'react'
 import video from '../assets/AdobeStock.mov'
+import { Link, useNavigate } from 'react-router-dom'
 
 const HeroSection = () => {
+    const navigate = useNavigate();
+
     return (
         <>
             <div className='flex flex-col items-center mt-6 lg:mt-20'>
@@ -10,7 +13,8 @@ const HeroSection = () => {
                 </h1>
             </div>
             <div className="flex justify-center my-10">
-                <a href="/upload" className='bg-gradient-to-r from-blue-500 to-blue-800 py-3 px-4 mx-3 rounded-md text-white font-semibold'>Get Started</a>
+                <Link to="/upload" className='bg-gradient-to-r from-blue-500 to-blue-800 py-3 px-4 mx-3 rounded-md text-white font-semibold'>Get Started</Link>
+                {/* <button onClick={() => navigate("/upload")} className="bg-gradient-to-r from-blue-500 to-blue-800 py-3 mx-3 rounded-md text-white font-semibold">Get Started</button> */}
             </div>
             <div className="flex mt-10 justify-center">
                 <video 
